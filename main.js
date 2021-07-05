@@ -56,6 +56,17 @@ function filterRangeInPlace(arr9, a, b) {
 filterRangeInPlace(arr9, 1, 4);
 console.log('Значения между а и b = ', arr9 ); // [3, 1]
 
+let arr91 =  [5, 3, 8, 1]
+function filterRangeInPlace1(arr91, a, b){
+    var c = arr91.filter(function(item){
+        if (item >= a && item <= b){            
+        return true;
+        }
+    })
+    console.log('2 Вариант Значения между а и b = ', c);
+}
+filterRangeInPlace1(arr91, 1, 4);
+
 console.log('------------- # 10');
 let str10 = 'my-short-string';
 let s = '-';
@@ -76,6 +87,16 @@ function slArray(arr11, startIndex, endIndex) {
 };
 console.log('Range = ', range ); // 3, 8, 1 
 console.log('Arr11 = ', arr11 ); // 5,3,8,1 (без изменений)
+
+let arr112 = [5, 3, 8, 1];
+let range112 = slArray(arr112, 1, 3);
+
+function slArray(arr112, startIndex, endIndex) {    
+    let arrSpliced112 = arr112.slice(startIndex, endIndex);   
+    return arrSpliced112;
+};
+console.log('2 Вариант с использованием толко slice, Range = ', range112 ); // 3, 8, 1 
+console.log('2 Вариант с использованием толко slice, Arr11 = ', arr112 ); // 5,3,8,1 (без изменений)
 
 console.log('------------- # 12');
 function sum(...spread) {
