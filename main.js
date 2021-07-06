@@ -98,6 +98,15 @@ function slArray(arr112, startIndex, endIndex) {
 console.log('2 Вариант с использованием толко slice, Range = ', range112 ); // 3, 8, 1 
 console.log('2 Вариант с использованием толко slice, Arr11 = ', arr112 ); // 5,3,8,1 (без изменений)
 
+let arr113 = [5, 3, 8, 1];
+let range113 = slArray(arr113, 1, 3);
+
+function slArray(arr113, startIndex, endIndex) {    
+    return arr113.slice(startIndex, endIndex);       
+};
+console.log('3 Вариант с использованием толко slice, Range = ', range113 ); // 3, 8, 1 
+console.log('3 Вариант с использованием толко slice, Arr11 = ', arr113); // 5,3,8,1 (без изменений)
+
 console.log('------------- # 12');
 function sum(...spread) {
     let sum = 0;
